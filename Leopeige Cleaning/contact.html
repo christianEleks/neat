@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We are a main organization in Nigeria and work in Imo state for disinfection and cleanliness. Anything that makes your current circumstance and you perfect, slick and clean is our task.">
+    <meta name="keywords" content="Cleaning services, House works, Mopping and dusting, Cutting grasses, Weeding, Washing">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="../Favicon/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a6e25eb83d.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing:border-box ;
+    }
+    body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+   }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        background-color: rgb(179, 153, 120);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 20px;
+    }
+    #nav-link{
+        display: flex;
+        align-items: center;
+    }
+    ul li{
+        list-style-type: none;
+        display: flex;
+        margin: 0 30px;
+    }
+    ul li a{
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        color:rgb(241, 147, 24);
+        transition:.4s;
+    }
+    .bag{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        background: rgb(241, 147, 24);
+        padding: 9px 25px;
+        border-radius: 30px;
+        transition:transform .4s;
+    }
+    .bag:hover{
+        transform: scale(1.2);
+    }
+    .menu-btn{
+       position: absolute;
+       top:30px;
+       right:30px;
+       width: 40px;
+       cursor:pointer;
+       display: none;
+    }
+
+   .line{
+    width: 150px;
+    height: 4px;
+    background-color: rgb(241, 147, 24);
+    margin: 0 auto;
+    border-radius: 5px;
+   }
+   header{
+    padding-top: 5rem;
+    width:100vw;
+    height: 100vh;
+    background:rgba(0,0,0,0.7) url(../Image/ime.jpg);
+    background-size:cover;
+    background-position:center;
+    background-blend-mode: darken;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+   }
+   .header{
+    margin-bottom: 150px;
+    color: white;
+    text-align: center;
+   }
+   .header h1{
+    font-size: 8vmin;
+    padding-top: 100px;
+   }
+   form{
+    margin: 0 1rem;
+   }
+   .me{
+    padding: 12px;
+    width: 65%;
+    margin: 0.5rem 0;
+    border: 1px solid rgba(31, 30, 30, 0.644);
+   }
+   textarea{
+    border: 1px solid rgba(31, 30, 30, 0.644);
+    margin: 0.5rem 0;
+    width: 65%;
+   }
+   select{
+    padding: 7px;
+    border: 1px solid rgba(31, 30, 30, 0.644);
+   }
+   textarea:focus,
+   .me:focus,
+   select:focus{
+    outline: none;
+    border-color: rgb(179, 153, 120);
+   }
+   .her:hover{
+    transform: scale(1.1);
+   }
+   .loader{
+      position: fixed;
+      top:0;
+      left:0;
+      width:100vw;
+      height:100vh;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background-color:whitesmoke;
+      z-index: 9999999;
+     }
+     .loader-active{
+      display: flex;
+     }
+     .loader::after{
+      content:"";
+      width:70px;
+      height: 70px;
+      background:rgb(241, 147, 24);
+      animation: loader 0.5s infinite;
+      animation-direction: alternate;
+     }
+    
+     @keyframes loader{
+      from{
+         transform: translateY(-50px) scale(0.5);
+         border-radius: 50%;
+      }
+      to{
+         transform: translateY(50px) scale(1);
+         border-radius:0%;
+      }
+     }
+ 
+    @media only screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .belt{
+        position: absolute;
+        top:30px;
+        left: 30px;
+    }
+    .navbar{
+        padding: 40px;
+    }
+    #nav-link{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(179, 153, 120);
+        margin-top: -1200px;
+        transition: all 0.5s ease;
+    }
+    ul li{
+        margin: 30px auto;
+    }
+    }
+    @media only screen and (max-width:450px){
+        .me{
+           width: 90%;
+        }
+        textarea{
+           width: 88%; 
+        }
+    }
+    
+   
+</style>
+<body onload="Load()">
+    <div class="loader loader-active"></div>
+    
+    <nav class="navbar">
+        <h2 class="belt" style="color: white;">Leopeige<span  style="color:rgb(241, 147, 24);"> Cleaning</span></h2>
+        <ul id="nav-link">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="service.html">Services</a></li>
+         <li><a href="contact.html">Contact</a></li>
+         <a class="bag" href="Book.html">Book</a>
+        </ul>
+        <img src="../Image/down .png" class="menu-btn" onclick="menu()"/>
+     </nav>
+
+    <header>
+        <div class="header">
+            <h1>Contact Us</h1>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <div class="box" style="margin: 1rem 1rem;">
+        <h1>Contact us</h1>
+        <p>Your comments and feedbacks are relevant</p>
+        <hr>
+    </div>
+
+    <div class="row">
+        <div class="col-1">
+         <form action="https://formspree.io/f/mlekgzjr" method="POST">
+                 <input type="text" id="name" name="Name"  placeholder="Name" class="me"/>
+                 <input type="email" id="email" name="Email"  placeholder="Email" class="me"/>
+            <div>
+                 <input type="digits" id="phone" name="Phone Number"  placeholder="Phone Number (optional)" class="me"/>
+                 <input type="digits" id="phone" name="Phone Number"  placeholder="State (optional)" class="me"/>
+            </div>
+             <div>
+                     <label for="Reason for contact">Reason for contact:</label>
+                     <select>
+                         <option>Mode of cleaning</option>
+                         <option>Maintenance issue</option>
+                         <option>Report staffs</option>
+                         <option>Book services</option>
+                     </select>
+             </div>
+                 <textarea id="messageview" name="messageview" rows="6" cols="32" placeholder="messageview">
+              
+                 </textarea>
+             <div>
+                 <input type="submit" value="Send" style=" color: white;background-color: rgb(179, 153, 120);padding:12px 45px; font-weight: bold; border: none; border-radius: 4px; transition: .4s;" class="her"/>
+             </div> 
+         </form>
+        </div>
+     </div> <br> <br> <br>
+
+        <div style="background-color: #F3F4F5; height: 5rem; text-align: center;padding-top: 2rem;" class="my">
+         <h4 style="text-align: center;font-weight: lighter;" id="bell">copyright © 2022 Leopeige Cleaning All Right Reserved   <a href="https://www.privacypolicies.com/live/5dfe26c5-263d-40bc-aee5-e18df4cf6074">privacy policy</a></h4>
+        </div>
+    
+
+</body>
+
+<script>
+     var navStatus=true
+    function menu(){
+     if(navStatus==true){
+       document.getElementById("nav-link").style.marginTop="0px";
+       document.getElementById("nav-link").style.borderBottomRightRadius="40%";
+       navStatus=false;  
+     }
+     else if(navStatus==false){
+         document.getElementById("nav-link").style.marginTop="-1200px";
+         document.getElementById("nav-link").style.borderBottomRightRadius="40%";
+         navStatus=true;
+     }
+    }
+
+    function Load(){
+   const currentDate = new Date()
+   const year = currentDate.getFullYear()
+
+   document.getElementById("bell").innerHTML = `copyright © ${year} Leopeige Cleaning All Right Reserved <a href="https://www.privacypolicies.com/live/5dfe26c5-263d-40bc-aee5-e18df4cf6074">privacy policy</a>`
+}
+
+window.addEventListener("load", ()=> {
+       setTimeout(function(){
+          document.querySelector(".loader").classList.remove("loader-active");
+       },1000)
+    })
+</script>
+</html>
